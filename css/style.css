@@ -24760,3 +24760,48 @@ pulse {
 }
 
 /* fim Efeito icone whatsapp */
+
+/* inicio button flutuante */
+
+.floating-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #e52d05; 
+	color: #ffffff; 
+	padding: 15px 20px;
+	z-index: 2;
+	animation: pulse-floatingButton 2s 1s ease-out infinite;
+
+  }
+  
+  .floating-button:hover {
+	background-color: #fd4d08;
+    color: #ffffff;
+    box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.2), 0 0 30px #fd4d08;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media screen and (max-width: 767px) {
+	.floating-button {
+	  font-size: 14px; 
+	  padding: 10px 15px; 
+	  bottom: 10px; 
+	  right: 10px; 
+	}
+  }
+
+@keyframes 
+	pulse-floatingButton {
+		0% {
+			box-shadow: 0 0 0 2px #FF5722;
+		  }
+		  70% {
+			box-shadow: 0 0 0 15px rgba(0, 255, 0, 0);
+		  }
+		  100% {
+			box-shadow: 0 0 0 20px rgba(0, 255, 0, 0);
+		  }
+}
+
+/* fim button flutuante */
